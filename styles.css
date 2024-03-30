@@ -15,6 +15,52 @@ html, body{
 body{
     background-color: #f7f7f7;
 }
+.nav{
+    /* height: 100px; */
+    width: 100%;
+    position: fixed;
+    /* background-color: #a4a4a4; */
+    z-index: 9;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.nav-part1{
+    /* background-color: pink; */
+    height: 82.6px;
+    overflow: hidden;
+}
+svg{
+    display: block;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.nav-part2 .links a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 20px;
+}
+.links{
+    margin: 10px;
+}
+.nav-part2 .icons i{
+    margin: 0 20px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 100px;
+}
+.icons{
+    margin: 10px;
+    border-radius: 50px;
+    background-color: #f7f7f7;
+}
 #cursor{
     height: 250px;
     width: 250px;
@@ -68,7 +114,7 @@ hr{
     width: 100%;
     background-color: #000000;
     margin-top: 15px;
-    margin-bottom: -30px;
+    margin-bottom: -20px;
 }
 .left{
     margin-top: 40px;
@@ -212,6 +258,54 @@ hr{
 }
 
 @media (max-width:600px){
+    .nav{
+        /* height: 100px; */
+        width: 100%;
+        position: fixed;
+        /* background-color: #a4a4a4; */
+        z-index: 9;
+        padding: 15px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .nav-part1{
+        /* background-color: pink; */
+        height: 62.6px;
+        overflow: hidden;
+    }
+    svg{
+        display: block;
+        height: 62px;
+    }
+    .nav-part2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .nav-part2 .links a{
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0 20px;
+    }
+    .links{
+        margin: 10px;
+        display: none;
+    }
+    .nav-part2 .icons i{
+        margin: 0 20px;
+        color: #333;
+        font-size: 15px;
+        font-weight: 100px;
+    }
+    .icons{
+        margin: 7px;
+        border-radius: 50px;
+        background-color: #f7f7f7;
+    }
     #page1{
         min-height: 70vh;
         width: 100%;
@@ -255,5 +349,108 @@ hr{
         width: 100%;
         overflow: hidden;
         margin-bottom: 3vw;
+    }
+
+    /* #page3{
+        height: 150vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .child{
+        min-height: 54vh;
+        width: 88vw;
+        position: relative;
+        padding: 15vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .child img{
+        height: 54vh;
+    }
+    
+    .pdts{
+        margin-top: 25px;
+        font-family: Helvetica;
+        text-transform: uppercase;
+        text-align: center;
+        /* font-size: 12px; */
+    */
+
+    hr{
+        height: 1px;
+        border: none;
+        width: 100%;
+        background-color: #000000;
+        margin-top: 15px;
+        margin-bottom: -30px;
+    }
+
+    
+}
+
+#page3 {
+    height: 150vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child {
+    min-height: 54vh;
+    width: 38vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Adjust margin-bottom as needed */
+}
+
+.child img {
+    max-width: 100%; /* Ensure image doesn't exceed parent width */
+    max-height: 100%; /* Ensure image doesn't exceed parent height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.pdts {
+    margin-top: 15px; /* Adjust margin-top as needed */
+    font-family: Helvetica;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Media query for adjusting child size on smaller screens */
+@media screen and (max-width: 600px) {
+    .child {
+        width: 45%; /* Adjusted width for smaller screens */
+         /* Decrease margin-bottom to reduce gap */
+    }
+    #page3{
+        height:80vh;
+    }
+    #child4{
+        margin-top:-300px;
+    }
+    #child3{
+        margin-top:-300px;
+    }
+    #child1{
+        margin-top:auto;
+    }
+    #child2{
+        margin-top: auto;
     }
 }
