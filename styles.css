@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+*::selection{
+    background-color: black;
+    color: #fff;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #f7f7f7;
+}
+#cursor{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    background-color: rgb(195, 223, 210);
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+}
+#page1{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 20vh;
+}
+
+#page1 h1{
+    font-size: 15.8vw;
+    text-transform: uppercase;
+    font-family: futura;
+    line-height: 14vw;
+    letter-spacing: -8px;
+}
+
+#video-container{
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+    position: relative;
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-container #play{
+    padding: 3vw 2.3vw;
+    background-color: black;
+    color: #fff;
+    position:fixed;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+hr{
+    height: 1px;
+    border: none;
+    width: 100%;
+    background-color: #000000;
+    margin-top: 15px;
+    margin-bottom: -30px;
+}
+.left{
+    margin-top: 40px;
+    margin-bottom: -20px;
+    font-family: Helvetica;
+}
+.right{
+    text-align: right;
+    align-items: center;
+    font-family: Helvetica;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page2 .elem{
+    height: 100%;
+    width: 32%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    scale: 1.1;  
+}
+#page2 .elem .dets{
+    height: 50px;
+    width: 303px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 2;
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+#page2 .elem .dets:hover{
+    height: 300px;
+
+} 
+
+#page2 .image{
+    height: 150px;
+    width: 30%; 
+    display: inline;
+    float: left;
+    margin-left: 35px;
+    margin-top: 23px;
+    
+}
+
+.dt{
+    display: inline;
+    float: left;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+#dt{
+    font-weight: 600;
+}
+.dot{
+    height: 8px;
+    width: 8px;
+    border: 2px sloid black;
+    color: black;
+    margin-left: 48px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline;
+    float: left;
+    margin-top: 20px;
+}
+.dt_arrow{
+    display:inline;
+    float:left;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+#dets1{
+    background-color: #EDF3FF;
+}
+#dets2{
+    background-color: #f5dfcf;
+}
+#dets3{
+    background-color: #FFFFFF;
+}
+
+.elem P{
+ font-size: small;
+ text-transform: uppercase;
+}
+
+#page3{
+    height: 150vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child{
+    min-height: 54vh;
+    width: 38vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.child img{
+    height: 54vh;
+}
+
+.pdts{
+    margin-top: 25px;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    text-align: center;
+    /* font-size: 12px; */
+}
+
+#page4{
+    height: 100vh;
+    width: 100%;
+}
+
+@media (max-width:600px){
+    #page1{
+        min-height: 70vh;
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 25vh;
+    }
+
+    #page1 h1{
+        font-size: 15.5vw;
+        letter-spacing: -3px;
+    }
+
+    #video-container{
+        height: 25vh;
+        margin-top: 3vw;
+    }
+
+    #video-container #play{
+        padding: 9.5vw 7.2vw;
+        position:absolute;
+        font-size: 5.5vw;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%,-50%);
+    }   
+    
+    #page2{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        padding: 5vw 3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #page2 .elem{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+}
